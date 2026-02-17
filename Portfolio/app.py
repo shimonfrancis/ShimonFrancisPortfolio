@@ -10,7 +10,7 @@ from PIL import Image
 try:
     import data
 except ImportError:
-    from Portfolio_2025 import data
+    from Portfolio import data
 
 # --- Page Config ---
 st.set_page_config(page_title="Shimon Francis | Portfolio", page_icon="🌟", layout="wide")
@@ -28,13 +28,13 @@ def local_css(file_name):
 
 # Load CSS
 try:
-    local_css("Portfolio_2025/styles/main.css")
+    local_css("Portfolio/styles/main.css")
 except FileNotFoundError:
-    local_css("styles/main.css") # Fallback if running from inside Portfolio_2025
+    local_css("styles/main.css") # Fallback if running from inside Portfolio
 
 # --- Assets ---
 lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
-img_passport = Image.open("Portfolio_2025/Shimon_Passport_Size_latest.png")
+img_passport = Image.open("Portfolio/Shimon_Passport_Size_latest.png")
 
 # --- Sidebar ---
 with st.sidebar:
@@ -77,7 +77,7 @@ if selected == "About":
     col1, col2 = st.columns([1, 2])
     with col1:
         st.image(img_passport, width=250, caption="Shimon Francis")
-        with open("Portfolio_2025/Shimon-Francis.pdf", "rb") as pdf_file:
+        with open("Portfolio/Shimon-Francis.pdf", "rb") as pdf_file:
             pdf_bytes = pdf_file.read()
         st.download_button(
             label="📄 Download Resume",
