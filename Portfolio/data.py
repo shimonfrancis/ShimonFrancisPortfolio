@@ -31,7 +31,7 @@ timeline_data = [
 # Skills Data
 skills_data = {
     "Geospatial AI & Deep Learning": {"TorchGeo": 90, "Raster Vision": 45, "Pytorch": 50,"Tensorflow":60,"CNNs":50,},
-    "Agentic Workflows": {"Langchain": 90, "LangGraph": 85, "DeepAgent": 90, "State Machines": 80},
+    "Agentic Workflows": {"Langchain": 90, "LangGraph": 85, "Deepagent": 90, "State Machines": 80,"Retrieval Augmented Generation(RAG)":70},
     "Geospatial Automation": {"GDAL": 85, "Rasterio": 80, "Shapely": 85, "Geopandas": 75, "Fiona": 60, "Pandas": 85},
     "SAR Engineering":{"pyroSAR":85,"Sentinel-1":80},
     "Softwares":{"QGIS":85,"ESA SNAP":70}
